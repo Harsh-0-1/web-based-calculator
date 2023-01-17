@@ -1,74 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Portfolio</title>
+    <title>HTML Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
-          euismod odio, gravida pellentesque urna varius vitae.
-        </p>
-      </section>
-      <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li>
-            <h3>Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              viverra euismod odio, gravida pellentesque urna varius vitae.
-            </p>
-          </li>
-          <li>
-            <h3>Project 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              viverra euismod odio, gravida pellentesque urna varius vitae.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section id="services">
-        <h2>My Services</h2>
-        <ul>
-          <li>Service 1</li>
-          <li>Service 2</li>
-          <li>Service 3</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
-          <br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" />
-          <br />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <br />
-          <input type="submit" value="Send" />
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © My Portfolio</p>
-    </footer>
+    <form>
+      <input type="text" id="result" disabled />
+      <br /><br />
+      <input
+        type="button"
+        value="1"
+        onclick="document.getElementById('result').value+='1'"
+      />
+      <input
+        type="button"
+        value="2"
+        onclick="document.getElementById('result').value+='2'"
+      />
+      <input
+        type="button"
+        value="3"
+        onclick="document.getElementById('result').value+='3'"
+      />
+      <input
+        type="button"
+        value="+"
+        onclick="document.getElementById('result').value+='+'"
+      />
+      <br />
+      <input
+        type="button"
+        value="4"
+        onclick="document.getElementById('result').value+='4'"
+      />
+      <input
+        type="button"
+        value="5"
+        onclick="document.getElementById('result').value+='5'"
+      />
+      <input
+        type="button"
+        value="6"
+        onclick="document.getElementById('result').value+='6'"
+      />
+      <input
+        type="button"
+        value="-"
+        onclick="document.getElementById('result').value+='-'"
+      />
+      <br />
+      <input
+        type="button"
+        value="7"
+        onclick="document.getElementById('result').value+='7'"
+      />
+      <input
+        type="button"
+        value="8"
+        onclick="document.getElementById('result').value+='8'"
+      />
+      <input
+        type="button"
+        value="9"
+        onclick="document.getElementById('result').value+='9'"
+      />
+      <input
+        type="button"
+        value="*"
+        onclick="document.getElementById('result').value+='*'"
+      />
+      <br />
+      <input
+        type="button"
+        value="c"
+        onclick="document.getElementById('result').value=''"
+      />
+      <input
+        type="button"
+        value="0"
+        onclick="document.getElementById('result').value+='0'"
+      />
+      <input
+        type="button"
+        value="="
+        onclick="document.getElementById('result').value=eval(document.getElementById('result').value)"
+      />
+      <input
+        type="button"
+        value="/"
+        onclick="document.getElementById('result').value+='/'"
+      />
+      <br />
+    </form>
   </body>
 </html>
